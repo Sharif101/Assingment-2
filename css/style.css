@@ -221,6 +221,10 @@ footer .contact a
     {
         width: 100%;
     }
+    #banner-part {
+        border-radius: 10px;
+        margin-top: 0px;
+    }
     #banner-part .banner {
         justify-content: center;
         flex-direction: column;
@@ -271,7 +275,6 @@ footer .contact a
         width: 100%;
     }
 
-
     footer .contact {
         flex-direction: column;
         align-items: center;
@@ -279,6 +282,61 @@ footer .contact a
     footer .contact a {
         font-size: 22px;
         padding-bottom: 15px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* next page  */
+.blogs2
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 100px;
+}
+
+
+.blogs2 .blog2 .text
+{
+    text-align: center;
+}
+.blogs2 .blog2 .img span
+{
+    margin-top: 10px;
+}
+.blogs2 .blog2 .text h6
+{
+    font-size: 18px;
+    font-family: var(--font);
+    font-weight: 600;
+    color: var(--font-col);
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.blogs2 .blog2 .text p
+{
+    font-size: 16px;
+    font-family: var(--font);
+    font-weight: 400;
+    color: var(--font-col);
+}
+
+@media screen and (max-width:576px) {
+    .blogs2 {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 100px;
     }
 }
 
