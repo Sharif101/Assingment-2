@@ -1,0 +1,273 @@
+/* common css */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+:root
+{
+    --font:'Poppins', sans-serif;
+    --banner-col: #161616;
+    --btn: #DD0000;
+    --font-col: #161616;
+}
+
+.container
+{
+    width: 1321px;
+}
+
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* banner part  */
+#banner-part
+{
+    background-color: var(--banner-col);
+    padding: 30px 0 0 0 ;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+#banner-part .banner
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+#banner-part .banner .text
+{
+    width: 531px;
+    margin: 100px 0;
+}
+#banner-part .banner .text h1
+{
+    color: white;
+    font-family: var(--font);
+    font-size: 55px;
+    font-weight: 700;
+}
+
+#banner-part .banner .text p
+{
+    font-family: var(--font);
+    color: white;
+    font-size: 14px;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+#banner-part .banner .text a i
+{
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.btn
+{
+    text-decoration: none;
+    color: white;
+    font-family: var(--font);
+    font-size: 20px;
+    font-weight: 400;
+    background-color: var(--btn);
+    padding: 16px 25px;
+    border-radius: 8px;
+}
+
+#banner-part .banner .img
+{
+    width: 581px;
+}
+
+#banner-part .banner .img img
+{
+    width: 100%;
+}
+
+
+
+/* nav bar part  */
+#blog-part
+{
+    display: flex;
+    margin-bottom: 150px;
+}
+
+.nav
+{
+    width: 312px;
+    height: 200px;
+    background-color: var(--banner-col);
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.nav .links a
+{
+    display: block;
+    background-color: #fff;
+    color: var(--font-col);
+    text-align: center;
+    padding: 12px 18px;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+/* blogs part */
+.blogs
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.blog
+{
+    width: 312px;
+    border: 1px solid #E8E8E8;
+}
+.blog .text{ 
+    padding: 20px;
+}
+.blog .text a
+{
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--font-col);
+    padding: 5px 10px;
+    border: 1px solid var(--font-col);
+    border-radius: 5px;
+}
+
+.blog .text p
+{
+    font-family: var(--font);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.blog .text .icon
+{
+    display: flex;
+}
+.blog .text .icon .chat, .time
+{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+
+/* footer part  */
+footer
+{
+    display: flex;
+    justify-content: center;
+    background-color: var(--banner-col);
+    padding: 200px 0;
+}
+
+footer h5
+{
+    text-align: center;
+    font-family: var(--font);
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 50px;
+}
+
+footer hr
+{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer .contact
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+footer .contact a
+{
+    text-decoration: none;
+    color: #B9B9B9;
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+/* responsive */
+@media screen and (max-width:576px) {
+
+    .container
+    {
+        width: 100%;
+    }
+    #banner-part .banner {
+        justify-content: center;
+        flex-direction: column;
+    }
+    #banner-part .banner {
+        align-items: center;
+    }
+    #banner-part .banner .img {
+        width: 50%;
+    }
+
+
+
+    .nav {
+        background: none;
+    }
+    .nav .links a {
+        border: 1px solid #E8E8E8;
+    }
+
+    #blog-part {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-row: 20px;
+    }
+    .blog {
+        width: 100%;
+    }
+    .blogs .blog .img img{
+        width: 100%;
+    }
+
+
+    footer .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .contact a {
+        font-size: 22px;
+        padding-bottom: 15px;
+    }
+}
+
+
+
