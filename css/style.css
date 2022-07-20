@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
 }
+body
+{
+    overflow-x: hidden;
+}
 
 :root
 {
@@ -67,6 +71,7 @@ main
 {
     font-size: 18px;
     padding-left: 10px;
+    transition: .6s;
 }
 
 .btn
@@ -79,6 +84,17 @@ main
     background-color: var(--btn);
     padding: 16px 25px;
     border-radius: 8px;
+    transition: .6s;
+}
+
+#banner-part .banner .text a:hover
+{
+    background-color: rgba(233, 255, 38, 0.815);
+    color: var(--btn);
+}
+#banner-part .banner .text a:hover i
+{
+    padding-left: 15px;
 }
 
 #banner-part .banner .img
@@ -192,6 +208,7 @@ footer
     justify-content: center;
     background-color: var(--banner-col);
     padding: 200px 0;
+    text-align: center;
 }
 
 footer h5
@@ -211,8 +228,10 @@ footer hr
 
 footer .contact
 {
-    display: flex;
+    /* display: flex;
     justify-content: space-evenly;
+    padding-top: 50px; */
+    display: inline-block;
     padding-top: 50px;
 }
 
@@ -223,6 +242,7 @@ footer .contact a
     font-family: var(--font);
     font-size: 16px;
     font-weight: 400;
+    padding: 0 50px;
 }
 
 footer .icons
@@ -305,6 +325,7 @@ footer .icons a
     }
 
     footer .contact {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -372,6 +393,21 @@ footer .icons a
         justify-content: center;
         margin-bottom: 20px;
     }
+
+    footer .contact
+    {
+    /* display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px; */
+    display: block;
+    padding-top: 50px;
+    }
+
+    footer .contact a {
+    padding: 26px;
+    padding-top: 20px;
+   }  
+
 }
 
 
