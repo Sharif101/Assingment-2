@@ -107,6 +107,7 @@ main
     background-color: var(--banner-col);
     padding: 20px;
     margin-right: 20px;
+    border-radius: 8px;
 }
 
 .nav .links a
@@ -123,6 +124,11 @@ main
     border-radius: 5px;
 }
 
+.nav .links .chld
+{
+    background-color: var(--btn);
+    color: white;
+}
 
 
 /* blogs part */
@@ -172,6 +178,13 @@ main
 }
 
 
+
+
+.view
+{
+    display: none;
+}
+
 /* footer part  */
 footer
 {
@@ -212,6 +225,22 @@ footer .contact a
     font-weight: 400;
 }
 
+footer .icons
+{
+    text-align: center;
+    margin-top: 70px;
+}
+footer .icons a
+{
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 40%;
+    line-height: 18px;
+    margin: 0 10px;
+}
 
 
 /* responsive */
@@ -284,7 +313,65 @@ footer .contact a
         padding-bottom: 15px;
     }
 
+}
 
+/* for tablets */
+@media screen and (min-width:578px) and (max-width:768px){
+
+    .container
+    {
+        width: 100%;
+    }
+
+    #banner-part .banner .text {
+        margin-left: 20px;
+    }
+    
+    #banner-part {
+        border-radius: 10px;
+        margin-top: 0px;
+    }
+    #banner-part .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #banner-part .banner .img {
+        width: auto;
+    }
+    
+    .links{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+    .nav {
+        width: 100%;
+        height: 200px;
+        background: none;
+        padding: 20px;
+        margin-right: 20px;
+    }
+    .nav .links a {
+        border: 1px solid #E8E8E8;
+    }
+    #blog-part {
+        flex-direction: column;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column: 0px;
+    }
+
+    .view
+    {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -314,6 +401,17 @@ footer .contact a
 {
     margin-top: 10px;
 }
+.blogs2 .blog2 .img 
+{
+    display: flex;
+}
+
+.blogs2 .blog2 .img span
+{
+    font-size: 16px;
+    font-family: var(--font);
+    font-weight: 400;
+}
 .blogs2 .blog2 .text h6
 {
     font-size: 18px;
@@ -339,6 +437,15 @@ footer .contact a
         grid-gap: 100px;
     }
 }
+@media screen and (min-width:578px) and (max-width:768px){
+    .blogs2 {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
 
+    .blogs2 .blog2 .img {
+        margin-left: 15%;
+    }
+}
 
 
