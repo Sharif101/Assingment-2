@@ -270,6 +270,9 @@ footer .icons a
     {
         width: 100%;
     }
+    main {
+        padding: 20px;
+    }
     #banner-part {
         border-radius: 10px;
         margin-top: 0px;
@@ -342,6 +345,10 @@ footer .icons a
     .container
     {
         width: 100%;
+    }
+    
+    main {
+        padding: 20px;
     }
 
     #banner-part .banner .text {
